@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/img_whiteBall"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@mipmap/white_ball"
+        android:transitionName="animationWhiteBall"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt2"
+        android:layout_toRightOf="@+id/img_whiteBall"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="This is for fragment transition without overlapping"
+        />
+
+
+
+
+</RelativeLayout>

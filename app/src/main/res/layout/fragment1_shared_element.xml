@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/img_whiteBall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/white_ball"
+        android:transitionName="animationWhiteBall"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txt1"
+        android:layout_below="@+id/img_whiteBall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is fragment 1"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:text="Next"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

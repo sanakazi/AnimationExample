@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AnimationExample</string>
+    <string name="activity_transition">Transition Activity</string>
+    <string name="activity_shared_elements">Shared Elements</string>
+</resources>
