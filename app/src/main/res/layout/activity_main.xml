@@ -110,14 +110,16 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:visibility="gone">
+        >
 
         <ImageView
+            android:id="@+id/img_blackBall"
             android:layout_weight="0.3"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:src="@mipmap/black_ball"/>
+            android:src="@mipmap/black_ball"
+            android:transitionName="animationBlackBall"/>
 
         <TextView
             android:layout_weight="0.7"

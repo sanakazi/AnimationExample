@@ -21,7 +21,7 @@ import com.example.sanakazi.animationexample.animationClasses.TransitionHelper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     LinearLayout l1,l2,l3,l4;
-    ImageView img_blueball,img_whiteBall;
+    ImageView img_blueball,img_whiteBall,img_blackBall;
     TextView txt_2;
 
 
@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Re-enter transition is executed when returning to this activity
         Slide slideTransition = new Slide();
         slideTransition.setSlideEdge(Gravity.LEFT);
-        slideTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));
-        getWindow().setReenterTransition(slideTransition);
+        slideTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));        getWindow().setReenterTransition(slideTransition);
         getWindow().setExitTransition(slideTransition);
     }
 
@@ -54,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         l4=(LinearLayout)findViewById(R.id.l4);
         img_blueball = (ImageView)findViewById(R.id.img_blueball);
         img_whiteBall = (ImageView)findViewById(R.id.img_whiteBall);
+        img_blackBall= (ImageView)findViewById(R.id.img_blackBall) ;
         txt_2= (TextView)findViewById(R.id.txt_2);
         l1.setOnClickListener(MainActivity.this);
         l2.setOnClickListener(MainActivity.this);
@@ -91,6 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i3, options3.toBundle());
                 break;
             case R.id.l4:
+                Intent i4 = new Intent(this, CircularRevealActivity.class);
+                Pair<View, String> p5= Pair.create((View)img_blackBall, "animationBlackBall");
+                ActivityOptionsCompat options4 = ActivityOptionsCompat.
+                        makeSceneTransitionAnimation(this, p5);
+                startActivity(i4, options4.toBundle());
                 break;
             default:
                 break;

@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".activities.TransitionActivity" />
         <activity android:name=".activities.SharedElementsActivity" />
-        <activity android:name=".activities.FragmentsAnimation"></activity>
+        <activity android:name=".activities.FragmentsAnimation" />
+        <activity android:name=".activities.CircularRevealActivity"></activity>
     </application>
 
 </manifest>
